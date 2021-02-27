@@ -13,7 +13,7 @@ class HashTable:
   # This method creates an array (list) of a given size and populates each of its elements with a LinkedList object.
 
   def create_arr(self, size):
-        firstarray = []
+    firstarray = []
     for i in range(size):
       firstarray.append(LinkedList())
     return firstarray
@@ -26,7 +26,7 @@ class HashTable:
   # Hash functions are a function that turns each of these keys into an index value that we can use to decide where in our list each key:value pair should be stored. 
 
   def hash_func(self, key):
-        length = len(self.arr)
+    length = len(self.arr)
     count = 0
     for i in key:
       count = ord(i)

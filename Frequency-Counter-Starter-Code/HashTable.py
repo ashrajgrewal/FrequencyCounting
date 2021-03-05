@@ -60,8 +60,13 @@ class HashTable:
   # erase: 2
 
   def print_key_values(self):
-    for i in self.arr:
-     i.print_nodes()
-
+    for lst in self.arr:
+      current = lst.head
+      if current == None:
+        pass
+      else:
+        for i in range(lst.length()):
+           print(f'{current.data[0]}: {current.data[1]}')
+           current = current.next
 
 
